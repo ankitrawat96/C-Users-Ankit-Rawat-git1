@@ -16,16 +16,17 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	/***
+	 * author ankit rawat
+	 */
 
 public TestBase()  {
-	
 	try {prop=new Properties();
 		FileInputStream file=new FileInputStream("C:\\Users\\Ankit Rawat\\eclipse-workspace\\Amazon_Project\\src\\main\\java\\com\\qa\\amazon\\config\\config.properties");
 		prop.load(file);
 	} catch (FileNotFoundException e) 
 	{
-		
-		e.printStackTrace();
+	e.printStackTrace();
 	} catch (IOException e) 
 	{
 		e.printStackTrace();
